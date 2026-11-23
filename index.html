@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Expediente STR — Renta Corta / Airbnb — Consultoría Omar Cruz</title>
+<meta name="description" content="Expediente de renta corta: ordenanza de tu ciudad/condado localizada, paquete de permiso o registro armado y contrato de co-hosting listo pa' firmar. $99 base · $199 con contrato personalizado. Hyattsville, MD."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* FAMILIA VISUAL: «BITÁCORA DE ESTANCIA» — patrón de lectura de diario de hospedaje:
+   la página se lee como una bitácora cronológica con sellos de entrada (Día 0 → Día 3),
+   línea de tiempo vertical con nodos, tarjetas tipo ficha de huésped y sello circular.
+   Tipografía: Bricolage Grotesque (titulares) + Outfit (texto). Color: verde pino profundo, coral atardecer, arena cálida.
+   Distinta a «Manifiesto de Ruta» (Archivo/Space Mono, asfalto/ámbar), «Registro de Llaves» (Fraunces/Inter, verde botella/cobre)
+   y «Archivador Doméstico» (Fraunces/Public Sans, salvia/terracota, pestañas laterales). */
+:root{--pine:#0f3b3a;--pine2:#082625;--coral:#e85d3f;--coral-d:#c74327;--sand:#fff6ec;--paper:#fffdf9;--mint:#dcefe6;--ink:#1d2b29;--muted:#5f6f6b;--line:#e3d5c2;--red:#9e2b1f;--redbg:#fbeae6;--gold:#8a6d1f}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--sand);color:var(--ink);font-family:"Outfit",system-ui,sans-serif;font-size:16.5px;line-height:1.65}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1}
+.top{background:var(--pine2);color:#fff}.top-in{max-width:1080px;margin:auto;padding:10px 20px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.top a{color:#ffd9a8;font-weight:800;text-decoration:none}
+.wrap{max-width:1080px;margin:auto;padding:26px 20px 10px}
+.hero{background:var(--pine);color:#fff;border-radius:22px;padding:38px 34px;position:relative;overflow:hidden}
+.hero:after{content:"STR · CHECK-IN";position:absolute;right:-18px;top:22px;transform:rotate(10deg);border:3px solid rgba(255,255,255,.55);color:rgba(255,255,255,.85);border-radius:12px;padding:8px 14px;font-weight:800;letter-spacing:.14em;font-size:.75rem}
+.shieldrow{display:flex;gap:14px;align-items:center}.brand{font-weight:900;text-transform:uppercase;letter-spacing:.04em}.sub{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:#bcd8cf}
+.kicker{color:#ffb59d;font-weight:800;letter-spacing:.13em;text-transform:uppercase;font-size:.78rem}
+h1{font-size:clamp(2.1rem,5vw,3.5rem);margin:.3em 0;max-width:18ch}h1 .hl{color:#ffc46b}
+.lede{font-size:1.12rem;color:#e6f0ec;max-width:64ch}.btn{display:inline-flex;min-height:52px;align-items:center;padding:13px 24px;border-radius:999px;font-weight:800;text-decoration:none;margin:6px 8px 6px 0}.btn-p{background:var(--coral);color:#fff}.btn-g{color:#fff;border:2px solid #fff;background:transparent}
+.price-line{background:rgba(255,255,255,.1);border:1px dashed rgba(255,255,255,.4);border-radius:12px;padding:12px 16px;max-width:640px}
+section{padding:36px 0 6px}h2{font-size:clamp(1.5rem,3.4vw,2.05rem);margin:0 0 8px}.secsub{color:#46544f;max-width:66ch}
+/* Bitácora: línea de tiempo */
+.log{position:relative;margin-left:30px;padding-left:34px;border-left:3px solid var(--pine)}
+.entry{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:20px 22px;margin-bottom:16px;box-shadow:0 8px 22px rgba(15,59,58,.06)}
+.entry:before{content:attr(data-day);position:absolute;left:-58px;top:18px;width:44px;height:44px;border-radius:50%;background:var(--coral);color:#fff;font-weight:900;font-size:.72rem;display:flex;align-items:center;justify-content:center;text-align:center;border:3px solid var(--sand)}
+.entry h3{margin:0 0 6px;font-size:1.2rem}.entry ul{margin:6px 0;padding-left:18px}
+.stamp{display:inline-block;border:2.5px solid var(--pine);color:var(--pine);border-radius:8px;padding:2px 10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.72rem;transform:rotate(-2deg)}
+.example{background:#fff3d9;border:2px dashed var(--gold);border-radius:16px;padding:20px 24px}.example h3{margin-top:8px}
+.checkrow{display:flex;gap:10px;padding:11px 0;border-bottom:1px dashed var(--line)}.checkrow:last-child{border-bottom:none}.box{flex:0 0 auto;width:26px;height:26px;border-radius:7px;background:var(--mint);color:var(--pine);font-weight:900;text-align:center;line-height:26px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.price{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:24px}.price.featured{border:3px solid var(--coral)}.amt{font-family:"Bricolage Grotesque",sans-serif;font-size:2.7rem;font-weight:800}.price ul{padding-left:18px}
+.warn{border:3px solid #b7791f;background:#fff8e1;border-radius:16px;padding:22px 24px}.warn h2{color:#7a5410}
+.honest{border:2.5px solid var(--red);background:var(--redbg);border-radius:16px;padding:24px}.honest h2{color:var(--red)}
+.next{background:var(--pine);color:#fff;border-radius:16px;padding:24px}.next a{color:#ffc46b;font-weight:800}
+details{background:var(--paper);border:1px solid var(--line);border-radius:12px;margin-bottom:10px;padding:16px 20px}summary{cursor:pointer;font-weight:800}
+form{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:24px}label{font-weight:700;display:block;margin:14px 0 6px}input,select,textarea{width:100%;min-height:50px;padding:12px;font:inherit;border:1.5px solid #cbbfa8;border-radius:10px;background:#fff}textarea{min-height:110px}.submit{width:100%;background:var(--coral);color:#fff;border:none;min-height:56px;border-radius:999px;font:inherit;font-weight:900;font-size:1.05rem;cursor:pointer;margin-top:18px}.submit:hover{background:var(--coral-d)}
+footer{max-width:1080px;margin:30px auto;padding:20px;font-size:.92rem;color:var(--muted)}
+@media(max-width:760px){.grid{grid-template-columns:1fr}.hero{padding:26px 18px}.hero:after{display:none}.log{margin-left:6px;padding-left:26px}.entry:before{left:-48px;width:38px;height:38px}}
+</style>
+</head>
+<body>
+<div class="top"><div class="top-in"><span>Hyattsville, Maryland · Atención en español</span><a href="tel:+12406590154">☎ 240-659-0154</a></div></div>
+<div class="wrap">
+<header class="hero">
+<div class="shieldrow"><svg width="46" height="50" viewBox="0 0 44 48" aria-hidden="true"><path d="M22 1 41 7v13c0 12.5-8 21.5-19 26C11 41.5 3 32.5 3 20V7Z" fill="#082625"/><path d="M22 4.5 38 9.7V20c0 10.8-6.7 18.8-16 23C12.7 38.8 6 30.8 6 20V9.7Z" fill="none" stroke="#ffc46b" stroke-width="1.6"/><text x="22" y="24" text-anchor="middle" font-family="Georgia" font-weight="900" font-size="13" fill="#fff">OC</text><text x="22" y="35" text-anchor="middle" font-size="6" fill="#ffc46b">MD · USA</text></svg><div><div class="brand">Consultoría Omar Cruz</div><div class="sub">Organización de documentos · Hyattsville, MD</div></div></div>
+<p class="kicker">Servicio secretarial · Renta corta / Airbnb</p>
+<h1>Tu renta corta, <span class="hl">con el expediente en regla</span> antes del primer huésped.</h1>
+<p class="lede">Cada ciudad y condado pide algo distinto pa' rentar por Airbnb o por noches: una ordenanza, un permiso, un registro, un límite de noches. <strong>Omar investiga la ruta de TU jurisdicción, verifica qué pide la ordenanza de renta corta, arma el paquete de permiso o registro y deja el contrato de co-hosting listo pa' firmar.</strong> Tú dictas y entregas tus datos; nosotros transcribimos y organizamos.</p>
+<a class="btn btn-p" href="#solicitud">Armar mi Expediente STR — $99</a><a class="btn btn-g" href="#precios">Ver precios</a>
+<p class="price-line"><strong>Precio claro:</strong> $99 expediente base · $199 con contrato de co-hosting personalizado al caso. Sin cargos escondidos. Los cargos del gobierno los pagas tú, directo a tu ciudad/condado.</p>
+</header>
+
+<section id="problema"><h2>El problema: cada jurisdicción juega con reglas distintas</h2><p class="secsub">No existe «el permiso de Airbnb» único. Una ciudad exige registro anual, el condado de al lado limita las noches, otra pide inspección o carta del dueño. Publicar sin verificar eso expone al anfitrión a multas y a que le cierren el anuncio. Este servicio existe pa' verificar primero y armar el paquete en orden.</p></section>
+
+<section id="bitacora"><h2>La bitácora del expediente — así se arma</h2><p class="secsub">Se lee como el diario de la estancia: cada entrada cierra una etapa y deja su sello.</p>
+<div class="log">
+<article class="entry" data-day="DÍA 0"><span class="stamp">Entrada · Investigación</span><h3>Se localiza la ordenanza de TU jurisdicción</h3><p>Omar investiga la ruta que aplica a la dirección exacta de la propiedad:</p><ul><li>Ordenanza de renta corta (short-term rental) de tu ciudad y/o condado</li><li>Si exige permiso, licencia o solo registro — y dónde se somete</li><li>Límites que declare la norma: noches por año, ocupante principal, estacionamiento, inspección, impuestos de hospedaje</li><li>Resumen en español, en lenguaje claro, de lo que la norma pide</li></ul></article>
+<article class="entry" data-day="DÍA 1"><span class="stamp">Ficha · Permiso / Registro</span><h3>Se arma el paquete de permiso o registro</h3><ul><li>Checklist punto por punto de lo que pide la jurisdicción</li><li>Documentos del cliente organizados en el orden pedido</li><li>Formularios transcritos con lo que el cliente dicta, listos pa' que el cliente revise y firme</li><li>Calendario de pasos: qué se somete, dónde y qué falta</li></ul></article>
+<article class="entry" data-day="DÍA 2"><span class="stamp">Contrato · Co-hosting</span><h3>Contrato de co-hosting listo pa' firmar <em>(paquete $199)</em></h3><ul><li>Contrato personalizado al caso: propiedad, partes, responsabilidades de limpieza, mensajes, cobros y reparto acordado</li><li>Cláusulas escritas con lo que las partes dictan y acuerdan entre ellas</li><li>Documento final ordenado, listo pa' imprimir y firmar</li></ul></article>
+<article class="entry" data-day="DÍA 3"><span class="stamp">Salida · Revisión final</span><h3>Revisión final contigo, antes de someter</h3><p>Se repasa el expediente completo contigo: lo que está, lo que falta y el paso exacto que sigue. <strong>La firma y la radicación las haces tú</strong> — Omar no firma por el cliente ni somete por el cliente.</p></article>
+</div></section>
+
+<section id="ejemplo"><h2>Prueba visible: un expediente STR organizado</h2>
+<div class="example"><span class="stamp">Ejemplo ilustrativo</span>
+<h3>Expediente STR — Propiedad Ejemplo (datos ficticios)</h3>
+<div class="checkrow"><span class="box">✓</span><div><strong>1 · Ordenanza localizada:</strong> «Ciudad Ejemplo» — Ordenanza STR ficticia §00-00: exige registro anual, máximo 120 noches/año, ocupante principal en la propiedad. Resumen de 1 página en español.</div></div>
+<div class="checkrow"><span class="box">✓</span><div><strong>2 · Checklist de permiso/registro:</strong> identificación del dueño ✓ · prueba de titularidad ✓ · permiso escrito del dueño si el operador no es el dueño ✓ · formulario de registro transcrito ✓ · pago municipal señalado (lo paga el cliente, directo).</div></div>
+<div class="checkrow"><span class="box">✓</span><div><strong>3 · Contrato de co-hosting:</strong> borrador personalizado — co-host «Ejemplo» atiende mensajes y limpieza; reparto y responsabilidades según lo dictado por las partes; listo pa' firmar.</div></div>
+<div class="checkrow"><span class="box">✓</span><div><strong>Índice final:</strong> 3 secciones, expediente completo y revisado con el cliente.</div></div>
+<p><em>EJEMPLO ILUSTRATIVO — todos los nombres, normas y datos de esta muestra son ficticios; tu expediente se arma con la ordenanza real de tu jurisdicción y tu información real.</em></p></div></section>
+
+<section id="precios"><h2>Precios</h2><div class="grid">
+<article class="price featured"><p><span class="stamp">Expediente base</span></p><div class="amt">$99</div><p>Pago único</p><ul><li>Investigación de la ordenanza de tu ciudad/condado</li><li>Resumen en español de lo que la norma pide</li><li>Checklist + paquete de permiso o registro armado</li><li>Revisión final contigo</li></ul><a class="btn btn-p" href="#solicitud">Quiero el base — $99</a></article>
+<article class="price"><p><span class="stamp">Con co-hosting</span></p><div class="amt">$199</div><p>Pago único</p><ul><li>Todo lo del expediente base</li><li>Contrato de co-hosting personalizado al caso</li><li>Responsabilidades y reparto según lo dictado por las partes</li><li>Documento listo pa' imprimir y firmar</li></ul><a class="btn btn-p" href="#solicitud" style="background:var(--pine)">Quiero el completo — $199</a></article>
+</div><p>El cobro es solo por investigar la ruta, transcribir y organizar el expediente. No incluye cargos de la ciudad/condado, impuestos ni tarifas de ninguna plataforma.</p></section>
+
+<section><div class="warn"><h2>⚠ Si NO eres el dueño de la propiedad, lee esto primero</h2>
+<p><strong>El arbitraje de renta corta — rentar una propiedad que no es tuya pa' volver a rentarla por noches — requiere el PERMISO ESCRITO del dueño de la propiedad.</strong> Sin ese permiso escrito, no armes el anuncio ni sometas registro a tu nombre: el contrato de alquiler y la ordenanza pueden prohibirlo, y el riesgo de multas, cancelación del contrato y cierre de la cuenta es tuyo.</p>
+<p>Si eres operador/co-host y no dueño, trae el permiso escrito del dueño como primer documento del expediente. Si no lo tienes, el primer paso es conseguirlo — por escrito.</p></div></section>
+
+<section id="faq"><h2>Preguntas frecuentes</h2>
+<details><summary>¿Ustedes me garantizan que me aprueban el permiso?</summary><p><strong>No.</strong> Omar NO garantiza la aprobación del permiso o registro. La decisión es únicamente de tu ciudad/condado. Nuestro trabajo es que el paquete que tú sometes vaya completo, ordenado y conforme al checklist localizado.</p></details>
+<details><summary>¿Ustedes firman o someten el paquete por mí?</summary><p><strong>No.</strong> Omar no firma por el cliente y no somete por el cliente. Transcribe y organiza lo que el cliente dicta; el cliente revisa, firma y radica.</p></details>
+<details><summary>¿Esto es asesoría legal?</summary><p><strong>No.</strong> No es asesoría legal y Omar Cruz no es abogado. Es un servicio secretarial de investigación de la ruta pública, transcripción y organización de documentos. Pa' interpretaciones legales de tu caso, consulta un abogado.</p></details>
+<details><summary>¿Qué diferencia hay entre el de $99 y el de $199?</summary><p>El de $99 localiza la ordenanza y arma el paquete de permiso/registro. El de $199 añade el contrato de co-hosting personalizado al caso, listo pa' firmar entre las partes.</p></details>
+<details><summary>Rento una propiedad que no es mía. ¿Puedo hacer renta corta?</summary><p>Solo con el <strong>permiso escrito del dueño</strong> de la propiedad. Sin ese permiso, no procede — ver la advertencia visible en esta página.</p></details>
+<details><summary>¿Y después de tener el permiso, quién atiende a los huéspedes?</summary><p>Eso ya es operación, no expediente. Como paso siguiente — separado de este servicio — existe <strong>Anfitrión IA</strong>, el servicio de mensajes a huéspedes 24/7. No viene incluido en el Expediente STR; se contrata aparte si lo quieres.</p></details>
+</section>
+
+<section><div class="next"><h2 style="color:#fff">Paso siguiente, cuando ya operes: Anfitrión IA</h2><p>Expediente aprobado y anuncio activo, el trabajo cambia: mensajes de huéspedes a toda hora. <strong>Anfitrión IA</strong> es el servicio hermano de operación (mensajería bilingüe 24/7 pa' huéspedes de Airbnb) — <strong>no es parte del Expediente STR ni está incluido en sus $99/$199</strong>; es una contratación separada, solo si la necesitas.</p></div></section>
+
+<section><div class="honest"><h2>⚠ La línea legal, clara y visible</h2>
+<p>La <strong>Consultoría Omar Cruz</strong> es un servicio privado de <strong>investigación de ruta pública, transcripción y organización de documentos</strong>: Omar transcribe y organiza lo que el cliente dicta y entrega.</p>
+<p><strong>Omar NO garantiza la aprobación del permiso o registro, NO firma por el cliente, NO somete por el cliente y esto NO es asesoría legal.</strong> Omar Cruz no es abogado. La aprobación la decide únicamente la jurisdicción. <strong>El arbitraje de renta corta requiere permiso escrito del dueño de la propiedad.</strong></p></div></section>
+
+<section id="solicitud"><h2>Solicitud — Expediente STR</h2>
+<form action="https://formsubmit.co/leydelswing@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="Nueva solicitud — Expediente STR (Renta Corta)"><input type="hidden" name="_cc" value="swingbravo@gmail.com"><input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false">
+<label>Nombre completo *<input name="Nombre completo" required autocomplete="name" placeholder="Tal como aparece en tu identificación"></label>
+<label>Teléfono *<input name="Teléfono" type="tel" required autocomplete="tel" placeholder="(240) 000-0000"></label>
+<label>Correo electrónico *<input name="Correo electrónico" type="email" required autocomplete="email" placeholder="tunombre@correo.com"></label>
+<div class="grid"><div><label>Ciudad y condado de la propiedad *<input name="Ciudad y condado de la propiedad" required placeholder="Ej.: Hyattsville, Prince George's County"></label></div>
+<div><label>Paquete de interés *<select name="Paquete de interés" required><option value="" disabled selected>Selecciona</option><option>Expediente base — $99</option><option>Con contrato de co-hosting — $199</option><option>No estoy seguro</option></select></label></div></div>
+<div class="grid"><div><label>¿Eres el dueño de la propiedad? *<select name="¿Es dueño de la propiedad?" required><option value="" disabled selected>Selecciona</option><option>Sí, soy el dueño</option><option>No — tengo permiso escrito del dueño</option><option>No — todavía no tengo el permiso escrito</option><option>Soy co-host del dueño</option></select></label></div>
+<div><label>¿Ya publicaste el anuncio?<select name="¿Ya publicó el anuncio?"><option value="" disabled selected>Selecciona</option><option>No, todavía no</option><option>Sí, ya está activo</option><option>Estuvo activo y lo pausé/cerraron</option></select></label></div></div>
+<label>Mensaje<textarea name="Mensaje" placeholder="Cuéntanos: dirección general (ciudad/condado), si ya tienes algún permiso o registro, y qué te preocupa de la ordenanza…"></textarea></label>
+<button class="submit" type="submit">Enviar mi solicitud →</button>
+<p style="text-align:center;color:var(--muted);font-size:.86rem">Tu información llega al correo de la Consultoría pa' contactarte sobre este servicio.</p>
+</form>
+<p style="text-align:center">¿Prefieres hablar primero? <a href="tel:+12406590154"><strong>240-659-0154</strong></a> · Consultoría Omar Cruz, Hyattsville, MD</p></section>
+</div>
+<footer><strong>Consultoría Omar Cruz</strong> · Investigación de ruta, transcripción y organización de documentos · Hyattsville, Maryland. Servicio privado: no garantiza aprobación de permisos, no firma ni somete por el cliente, no es asesoría legal. El arbitraje de renta corta requiere permiso escrito del dueño de la propiedad.</footer>
+</body></html>
